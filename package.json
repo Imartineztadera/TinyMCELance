@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --ssl --ssl-key C:\\certificates\\server.key  --ssl-cert C:\\certificates\\server.crt",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@tinymce/tinymce-angular": "^8.0.0",
     "rxjs": "~7.8.0",
+    "tinymce": "^7.0.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

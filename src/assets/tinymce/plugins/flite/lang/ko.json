@@ -1,0 +1,29 @@
+{
+	"TOGGLE_TRACKING": "변경 내용 추적 토글",
+	"TRACKING_ON": "변경 내용 추적 켜기",
+	"TRACKING_OFF": "변경 내용 추적 끄기",
+	"TOGGLE_SHOW": "변경 내용 추적 토글",
+	"ACCEPT_ALL": "표시된 변경 내용 모두 적용",
+	"REJECT_ALL": "표시된 변경 내용 모두 취소",
+	"ACCEPT_ONE": "변경 내용 적용",
+	"REJECT_ONE": "변경 내용 취소",
+	"START_TRACKING": "변경 내용 추적 시작",
+	"STOP_TRACKING": "변경 내용 추적 중단",
+	"PENDING_CHANGES": "문서에 보류 중인 변경 사항이 있습니다.\n변경 내용 추적을 해제하기 전에 이를 해결하십시오.",
+	"HIDE_TRACKED": "변경 내용 추적 숨기기",
+	"SHOW_TRACKED": "변경 내용 추적 표시",
+	"CHANGE_TYPE_ADDED": "추가 완료",
+	"CHANGE_TYPE_DELETED": "삭제 완료",
+	"MONTHS": [
+		"1월",		"2월",		"3월",		"4월",
+		"5월",		"6월",		"7월",		"8월",
+		"9월",		"10월",		"11월",		"12월"
+	],
+	"NOW": "지금",
+	"MINUTE_AGO": "1분 전",
+	"MINUTES_AGO": "%분 전",
+	"BY": "시점까지",
+	"ON": "시점",
+	"AT": "장소",
+	"USER": "User"
+}

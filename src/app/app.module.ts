@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { EditorModule, TINYMCE_SCRIPT_SRC } from '@tinymce/tinymce-angular';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    EditorModule
   ],
-  providers: [],
+  providers: [
+    { provide: TINYMCE_SCRIPT_SRC, useValue: 'tinymce/tinymce.min.js' }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,4 @@
+span.fr-video[data-flite-cid] {
+  width: -moz-fit-content;
+  width: fit-content;
+}

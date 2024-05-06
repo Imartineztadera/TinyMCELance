@@ -1,0 +1,60 @@
+annotation:not(.lance-annotation-class) {
+  display: inline-block;
+  width: 16px !important;
+  height: 21px !important;
+  background-image: url(images/marker3.png);
+  background-size: cover;
+  text-decoration: none;
+  overflow: hidden;
+  color: transparent;
+  cursor: pointer;
+}
+
+annotation:not(.lance-annotation-class):not(.lance-annotation-class)[data-selected='true'] {
+  background-image: url(images/marker3-s.png);
+}
+
+.lance-annotation-class {
+  background-color: #f9e9ac;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fcf6dc #f6dc7c #f6dc7c #fcf6dc;
+  padding: 1px 0;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  box-sizing: border-box;
+}
+
+.lance-annotation-class[data-selected='true'] {
+  /* border-color: #f9e9ac; */
+  background-color: #f6dc7c;
+}
+
+img.cke_annotation {
+  width: 16px !important;
+  height: 21px !important;
+  background-image: url(images/marker3.png);
+  background-size: cover;
+  cursor: pointer;
+  resize: none;
+  -moz-resize: none;
+}
+
+img.cke_annotation[data-selected='true'],
+img.cke_annotation annotation.cke_annotation[data-selected='true'] {
+  background-image: url(images/marker3-s.png);
+}
+
+img.cke_annotation::selection,
+annotation.cke_annotation::selection {
+  background-color: transparent;
+}
+
+img.cke_annotation::-moz-selection,
+annotation.cke_annotation::-moz-selection {
+  background-color: transparent;
+}
+
+.fr-toolbar .fr-command.fr-btn.loopindex-froala-button-highlight {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}

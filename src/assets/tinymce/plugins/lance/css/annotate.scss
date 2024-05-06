@@ -1,0 +1,64 @@
+$ann-bg-color: #f9e9ac;
+$ann-bg-dark: darken($ann-bg-color, 10%);
+$ann-bg-light: lighten($ann-bg-color, 10%);
+
+annotation:not(.lance-annotation-class) {
+	display: inline-block;
+	width: 16px !important;
+	height: 21px !important;
+	background-image: url(images/marker3.png);
+	background-size: cover;
+	text-decoration: none;
+	overflow: hidden;
+	color: transparent;
+	cursor: pointer;
+
+	&:not(.lance-annotation-class)[data-selected='true'] {
+		background-image: url(images/marker3-s.png);
+	}
+}
+
+.lance-annotation-class {
+	background-color: $ann-bg-color;
+	border-width: 1px;
+	border-style: solid;
+	border-color: $ann-bg-light $ann-bg-dark $ann-bg-dark $ann-bg-light;
+	padding: 1px 0;
+	border-radius: 2px;
+	border-top-left-radius: 0;
+	box-sizing: border-box;
+
+	&[data-selected='true'] {
+		/* border-color: #f9e9ac; */
+		background-color: $ann-bg-dark;
+	}
+}
+
+img.cke_annotation {
+	width: 16px !important;
+	height: 21px !important;
+	background-image: url(images/marker3.png);
+	background-size: cover;
+	cursor: pointer;
+	resize: none;
+	-moz-resize: none;
+
+	&[data-selected='true'],
+	annotation.cke_annotation[data-selected='true'] {
+		background-image: url(images/marker3-s.png);
+	}
+}
+
+img.cke_annotation::selection,
+annotation.cke_annotation::selection {
+	background-color: transparent;
+}
+
+img.cke_annotation::-moz-selection,
+annotation.cke_annotation::-moz-selection {
+	background-color: transparent;
+}
+
+.fr-toolbar .fr-command.fr-btn.loopindex-froala-button-highlight {
+	border: 1px solid rgba(128, 128, 128, 0.3);
+}
