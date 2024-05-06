@@ -82,7 +82,10 @@ export class AppComponent {
       const commentText = 'This is comment';
       if (selection) {
         try {
-          this.lance.getAnnotations().addComment(1, 1, commentText);
+          const annotationIds =  this.lance.getAnnotations().getAllAnnotationIds();
+          const annotationId =  annotationIds ? annotationIds[0] : 1; 
+          const commentId = 1;
+          this.lance.getAnnotations().addComment(annotationId, commentId, commentText);
         }
         catch (e) {
          this.lanceError = e;
