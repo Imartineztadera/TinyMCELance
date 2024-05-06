@@ -1,0 +1,14 @@
+.editor-container {
+    display: flex;
+    min-width: 80%;
+    max-width: 100%;
+}
+
+#my-editor {
+    flex: 1 0 1;
+}
+
+.annotations-container {
+    width: 300px;
+    flex: 0 0 1;
+}

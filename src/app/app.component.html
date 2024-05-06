@@ -1,6 +1,8 @@
 <h1>TinyMCE 7 Angular Demo</h1>
-<editor [init]="getEditorConfiguration()" id="myEditor"></editor>
-<div class="annotations-container"></div>
+<div class="editor-container">
+    <editor [init]="getEditorConfiguration()" id="myEditor"></editor>
+    <div class="annotations-container"></div>
+</div>
 <button (click)="addComment()"> Add Lance Comment</button>
 
 <p>{{lanceError}}</p>
