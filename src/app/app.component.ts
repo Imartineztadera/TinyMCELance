@@ -19,6 +19,7 @@ export class AppComponent {
 
   configLance() : any {
     return {
+      useTextSelection: true,
       annotations: {
         idGenerator: (annotation : any) => {
           return ["id", Date.now() % 10000, String.fromCharCode(Math.round(Math.random() * 10 + 65))].join('-');
@@ -41,11 +42,11 @@ export class AppComponent {
         users: []
       },
       debug: {
-        trace: false,
-        debug: false,
-        log: false,
+        trace: true,
+        debug: true,
+        log: true,
         error: true,
-        warn: false
+        warn: true
       }
     };
   }
